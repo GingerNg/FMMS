@@ -1,0 +1,29 @@
+fmss:
+  # Controls Flask's debug parameter, which will give you stacktraces in your
+  # browser and set Flask's request logger to the DEBUG level.
+  debug: False
+
+  # host and port for the Flask api. set host to 0.0.0.0 to listen on all IPs
+  host: 10.101.9.67
+  port: 5000
+  use_reloader: True
+
+
+mongo_conf:
+
+  # connection details to a mongo database
+  host: localhost
+  port: 27017
+  db: fmss
+
+  # names of collections within the db specified above
+  dagobah_collection: fmss
+  job_collection: fmss_job
+  log_collection: fmss_log
+
+mysql_conf:
+  host: localhost
+  port: 3306
+  db: fmss
+  table_task: fmss_task
+  table_sender: fmss_sender
